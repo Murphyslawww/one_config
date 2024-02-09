@@ -1,39 +1,6 @@
-[submodule "zsh-autosuggestions"]
-path = dotfiles/.zim/modules/zsh-autosuggestions
-url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "input"]
-path = dotfiles/.zim/modules/input
-url = https://github.com/zimfw/input.git
-[submodule "zsh-history-substring-search"]
-path = dotfiles/.zim/modules/zsh-history-substring-search
-url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule "zsh-completions"]
-path = dotfiles/.zim/modules/zsh-completions
-url = https://github.com/zsh-users/zsh-completions.git
-[submodule "completion"]
-path = dotfiles/.zim/modules/completion
-url = https://github.com/zimfw/completion.git
-[submodule "environment"]
-path = dotfiles/.zim/modules/environment
-url = https://github.com/zimfw/environment.git
-[submodule "duration-info"]
-path = dotfiles/.zim/modules/duration-info
-url = https://github.com/zimfw/duration-info.git
 [submodule "zsh-syntax-highlighting"]
 path = dotfiles/.zim/modules/zsh-syntax-highlighting
 url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "git-info"]
-path = dotfiles/.zim/modules/git-info
-url = https://github.com/zimfw/git-info.git
-[submodule "termtitle"]
-path = dotfiles/.zim/modules/termtitle
-url = https://github.com/zimfw/termtitle.git
-[submodule "git"]
-path = dotfiles/.zim/modules/git
-url = https://github.com/zimfw/git.git
-[submodule "utility"]
-path = dotfiles/.zim/modules/utility
-url = https://github.com/zimfw/utility.git
 [submodule "one_config"]
 path = /opt/REPOSITORIES/one_config
 url = https://github.com/fschlegelone/one_config.git

@@ -1,7 +1,7 @@
 source .env
 
-setopt GLOB_DOTS
 #ANCHOR - Symlinks
+setopt GLOB_DOTS
 for file in ${DOTFILES}/*; do
     ln -sfv "${file}" "${USER_HOME}"
 done
