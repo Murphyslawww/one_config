@@ -4,11 +4,7 @@
 
 #ANCHOR - CUSTOM CONFIGURATION
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
-
-# RUBY
-source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh # source ruby version manager
-source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh   # enable auto switch ruby version
-path() {
+onepath() {
   echo "Path Variable:"
   echo "$PATH" | tr ':' '\n'
 }
