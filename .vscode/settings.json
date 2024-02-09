@@ -1,8 +1,0 @@
-{
-    "files.exclude": {
-        ".DS_Store": true,
-        ".vscode": false,
-        ".zimrc": false,
-        ".git": false
-    }
-}
