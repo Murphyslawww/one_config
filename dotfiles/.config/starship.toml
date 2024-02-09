@@ -1,64 +1,49 @@
 format = """
-[░▒▓](#a3aed2)\
-[  ](bg:#a3aed2 fg:#090c0c)\
-[](bg:#769ff0 fg:#a3aed2)\
+
+$custom\
+[](bg:#C6A0F6 fg:#24273A)\
+$username\ 
+[](bg:#8AADF4 fg:#C6A0F6)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[](bg:#7DC4E4 fg:#8AADF4)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
-$nodejs\
-$rust\
-$golang\
-$php\
-[](fg:#212736 bg:#1d2230)\
+[](bg:#8BD5CA fg:#7DC4E4)\
 $time\
-[ ](fg:#1d2230)\
-\n$character"""
+[ ](fg:#8BD5CA)\
+"""
+
+add_newline = true
+
+[custom.icon]
+command = "echo -e '\\u  \\u '"
+style = "fg:#EED49F"
+when = true
+
+[username]
+show_always = true
+style_user = "bg:#C6A0F6 fg:#363A4F"
+style_root = "bg:#C6A0F6 fg:#363A4F"
+format = '[$user ]($style)'
+disabled = false
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "bg:#8AADF4 fg:#363A4F"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
 [git_branch]
 symbol = ""
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:#7DC4E4 fg:#363A4F"
+format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
-
-[php]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:#7DC4E4 fg:#363A4F"
+format = '[$all_status$ahead_behind ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+style = "bg:#8BD5CA fg:#363A4F"
+format = '[ 󰁫 $time ]($style)'

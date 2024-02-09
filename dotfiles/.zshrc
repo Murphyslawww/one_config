@@ -16,6 +16,7 @@ function onels() {
     ;;
   esac
 }
+
 # -----------------
 # ZIMRC CONFIG
 # -----------------
@@ -31,3 +32,8 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
 fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
+
+# -----------------
+# STARSHIP CONFIG
+# -----------------
+eval "$(starship init zsh)"
