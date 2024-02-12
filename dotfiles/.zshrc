@@ -2,14 +2,13 @@
 # ------------------------------
 # SOURCE OTHER ZSH CONFIGS
 # ------------------------------
-source $ZSH_CUSTOM
 
 # -----------------
 # ZSH CONFIG
 # -----------------
-
+source $ONE_ZSH/styles.env
 # list path variables under each other
-onepath() {
+1path() {
   echo "Path Variable:"
   echo "$PATH" | tr ':' '\n'
 }
@@ -47,7 +46,10 @@ function onecolorsbg() {
     echo
   done
 }
-
+# directory aliases
+alias cdrepos='cd /opt/REPOS'
+alias cdappsup='cd $HOME/Library/Application\ Support/'
+alias cdnashome='cd $NAS_HOME'
 # -----------------
 # ZIMRC CONFIG
 # -----------------

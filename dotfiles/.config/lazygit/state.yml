@@ -1,0 +1,11 @@
+lastupdatecheck: 0
+recentrepos:
+- /opt/REPOSITORIES/themes/catppuccin_kitty
+- /opt/REPOSITORIES/one_portfolio
+- /opt/REPOSITORIES/portfolio
+- /opt/REPOSITORIES/external/svg-path-editor
+startuppopupversion: 5
+customcommandshistory:
+- git diff main dev
+hidecommandlog: false
+ignorewhitespaceindiffview: false

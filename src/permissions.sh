@@ -8,7 +8,7 @@ if [[ $answer = "n" ]]; then
     return 0
 fi
 
-IGNORE_PERMISSIONS=($DOTFILES $DOTFILES/* $ONE_CONFIG/.gitignore $ONE_CONFIG/.gitmodules $ONE_CONFIG/.git $ONE_CONFIG/.DS_Store)
+IGNORE_PERMISSIONS=($APPSUP $APPSUP/* $ONE_CONFIG/appsup $ONE_CONFIG/appsup/* $DOTFILES $DOTFILES/* $ONE_CONFIG/.gitignore $ONE_CONFIG/.gitmodules $ONE_CONFIG/.git $ONE_CONFIG/.DS_Store)
 setopt GLOB_DOTS
 
 echo "\n\n${RED}Changed permissions and ownerships for: ${CYAN}"

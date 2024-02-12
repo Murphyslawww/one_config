@@ -2,5 +2,5 @@
 path = dotfiles/.zim/modules/zsh-syntax-highlighting
 url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "one_config"]
-path = /opt/REPOSITORIES/one_config
+path = /opt/REPOS/one_config
 url = https://github.com/fschlegelone/one_config.git
