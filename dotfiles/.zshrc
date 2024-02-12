@@ -1,11 +1,20 @@
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+# ------------------------------
+# SOURCE OTHER ZSH CONFIGS
+# ------------------------------
+source $ZSH_CUSTOM
+
 # -----------------
 # ZSH CONFIG
 # -----------------
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+# list path variables under each other
 onepath() {
   echo "Path Variable:"
   echo "$PATH" | tr ':' '\n'
 }
+
+# list ls output under each other
 function onels() {
   case "$1" in
   "-a")
@@ -15,6 +24,28 @@ function onels() {
     ls | tr " " "\n"
     ;;
   esac
+}
+# list all ansi text colors
+function onecolors() {
+  for COLOR in {0..255}; do
+    for STYLE in "38;5"; do
+      TAG="\033[${STYLE};${COLOR}m"
+      STR="${STYLE};${COLOR}"
+      echo -ne "${TAG}${STR}${NONE}  "
+    done
+    echo
+  done
+}
+# list all ansi background colors
+function onecolorsbg() {
+  for COLOR in {0..255}; do
+    for STYLE in "48;5"; do
+      TAG="\033[${STYLE};${COLOR}m"
+      STR="${STYLE};${COLOR}"
+      echo -ne "${TAG}${STR}${NONE}  "
+    done
+    echo
+  done
 }
 
 # -----------------
