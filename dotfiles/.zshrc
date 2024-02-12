@@ -6,6 +6,10 @@
 # -----------------
 # ZSH CONFIG
 # -----------------
+
+# ran on shell start
+fastfetch
+
 source $ONE_ZSH/styles.env
 # list path variables under each other
 1path() {
@@ -14,7 +18,7 @@ source $ONE_ZSH/styles.env
 }
 
 # list ls output under each other
-function onels() {
+function 1ls() {
   case "$1" in
   "-a")
     ls -a | tr " " "\n"
@@ -25,7 +29,7 @@ function onels() {
   esac
 }
 # list all ansi text colors
-function onecolors() {
+function 1colors() {
   for COLOR in {0..255}; do
     for STYLE in "38;5"; do
       TAG="\033[${STYLE};${COLOR}m"
@@ -36,7 +40,7 @@ function onecolors() {
   done
 }
 # list all ansi background colors
-function onecolorsbg() {
+function 1colorsbg() {
   for COLOR in {0..255}; do
     for STYLE in "48;5"; do
       TAG="\033[${STYLE};${COLOR}m"
@@ -50,6 +54,11 @@ function onecolorsbg() {
 alias cdrepos='cd /opt/REPOS'
 alias cdappsup='cd $HOME/Library/Application\ Support/'
 alias cdnashome='cd $NAS_HOME'
+
+# command aliases
+alias lgit="lazygit"
+alias ff="fastfetch"
+
 # -----------------
 # ZIMRC CONFIG
 # -----------------

@@ -1,9 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
-- /opt/REPOSITORIES/themes/catppuccin_kitty
-- /opt/REPOSITORIES/one_portfolio
-- /opt/REPOSITORIES/portfolio
-- /opt/REPOSITORIES/external/svg-path-editor
+- /opt/REPOS/one_config
 startuppopupversion: 5
 customcommandshistory:
 - git diff main dev
